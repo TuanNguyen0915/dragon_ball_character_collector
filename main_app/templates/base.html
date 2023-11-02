@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{% static "images/icon_2.png" %}">
+  <link rel="stylesheet" href="{% static "css/base.css" %}">
+  <title>DragonBall</title>
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  <header>
+    <div class="header-logo-container">
+      <a href="/">
+        <img src="{% static "images/logo_header.png" %}" alt="dragonball logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+
+</html>

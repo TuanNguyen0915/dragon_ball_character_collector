@@ -1,0 +1,73 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+header {
+    font-family: 'Bangers', sans-serif;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    /* color: black; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.header-logo-container {
+    width: 40%;
+}
+
+.header-logo-container img {
+    width: 30%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+nav li a:hover,
+.header-logo-container img:hover {
+    /* background: none; */
+    color: rgba(255, 217, 15, 1);
+    filter: drop-shadow(0 0 1.5rem rgba(255, 217, 15));
+}
