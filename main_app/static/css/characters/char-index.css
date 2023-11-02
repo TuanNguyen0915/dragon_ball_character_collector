@@ -1,0 +1,61 @@
+.chars-content {
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.page-header {
+    font-family: 'Bangers', sans-serif;
+    /* font-family: 'Bona Nova', sans-serif; */
+}
+
+.card-container {
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 275px;
+    margin: 10px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.card-content {
+    padding: 10px;
+    width: 100%;
+}
+
+.card-img-container {
+    width: 100%;
+}
+
+.card-img-container img {
+    width: 100%;
+}
+
+.usr-img {
+    width: 100%;
+    border-radius: var(--card-border-radius);
+}
+
+.card>a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: var(--font-xl);
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: var(--font-reg);
+}
