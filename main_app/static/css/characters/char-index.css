@@ -15,7 +15,7 @@
  }
 
  .header-logo-container img {
- 	width: 20%;
+ 	width: 30%;
  }
 
  .chars-img {
@@ -41,25 +41,20 @@
  	top: 0;
  	left: 0;
  	background: #000;
- 	opacity: 0.6;
+ 	opacity: 0.3;
  }
 
  .page-header {
  	position: absolute;
- 	top: 3rem;
+ 	top: 5rem;
  	font-family: 'Bangers', sans-serif;
- 	font-size: 2.5rem;
+ 	font-size: 3rem;
  	color: rgb(255, 217, 15);
  	filter: drop-shadow(0 0 2rem red);
  	/* font-family: 'Bona Nova', sans-serif; */
  }
 
  .card-container {
- 	/* position: absolute;
- 	left: 0;
- 	top: 8rem;
- 	width: 60%; 
-	 justify-content: start; */
  	position: relative;
  	width: 80%;
  	display: flex;
@@ -128,8 +123,4 @@
  	.card-container {
  		width: 100%;
  	}
-
- 	/* .chars-img {
- 		display: none;
- 	} */
  }

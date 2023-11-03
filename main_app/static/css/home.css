@@ -1,0 +1,75 @@
+* {
+    background: none;
+}
+
+/* .home-bg {
+    margin-top: 5rem;
+} */
+
+.home-content {
+    margin-left: 10rem;
+}
+
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.balls {
+    width: 50%;
+    filter: drop-shadow(0 0 .5rem rgba(255, 217, 15, .9));
+    animation: spin 30s linear infinite;
+    transition: .5s;
+}
+
+.balls:hover {
+    width: 70%;
+    filter: drop-shadow(0 0 .5rem white);
+
+}
+
+.home-p {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.home .content {
+    /* font-family: 'Bangers', sans-serif; */
+    font-family: 'Bona Nova', sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    color: white;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -157,13 +157,20 @@ nav a:hover {
     opacity: 1;
 }
 
-.footer-icons.left-icons:hover,
-.info:hover {
+.footer-icons.left-icons:hover {
     transform: translateX(.5rem);
     color: rgba(255, 217, 15);
     opacity: 1;
 }
 
+.info {
+    transition: .5s;
+}
+
+.info:hover {
+    color: rgba(255, 217, 15);
+    padding-left: .5rem;
+}
 
 @media screen and (max-width: 1024px) {
     .footer-container {
