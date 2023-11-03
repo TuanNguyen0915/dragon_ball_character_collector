@@ -2,40 +2,41 @@
 {% load static %}
 
 {% block head %}
-<link 
-  rel="stylesheet"
-  type="text/css"
-  href="{% static 'css/characters/char-index.css' %}"
-/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/characters/char-index.css' %}" />
 {% endblock %}
 
 {% block content %}
 <div class='chars-content'>
-<section class="page-header">
-  <h1>Characters List</h1>
-</section>
-
-<section class="card-container">
-  {% for char in chars %}
+  
+  <div class="chars-bg">
+    <div class="mask">
+      <img class="chars-img" src="{% static "images/chars_list_bg.jpg" %}" alt="Goku">
+    </div>
+  </div>
+  <div class="page-header">
+    <h1>Characters List</h1>
+  </div>
+  <div class="card-container">
+    {% for char in chars %}
     <div class="card">
       <div class="card-content">
         <div class="card-img-container">
-          <img 
-            src="{% static 'images/base.png' %}" 
-            alt="dragonball"
-          >
+          <img src="{% static 'images/base.png' %}" alt="dragonball">
         </div>
-        <h2 class="card-title">{{ char.name }}</h2>
+        <h2 class="card-title">
+          {{ char.name }}
+        </h2>
         <h2 class="card-title">{{char.skill}}</h2>
         {% if char.description %}
-          <p>{{char.description}} </p>
+        <p>{{char.description}} </p>
         {% else %}
-          <p>We don't have discription for {{char.skill}}</p>
+        <p>We don't have discription for {{char.skill}}</p>
         {% endif %}
-        {% comment %} <p><small>{{ cat.description }}</small></p> {% endcomment %}
+        {% comment %} <p><small>
+            {{ cat.description }}</small></p> {% endcomment %}
       </div>
     </div>
-  {% endfor %}
-</section>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

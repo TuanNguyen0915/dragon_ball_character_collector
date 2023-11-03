@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="{% static "images/icon_2.png" %}">
   <link rel="stylesheet" href="{% static "css/base.css" %}">
+  <script src="https://kit.fontawesome.com/f9a2af5bd6.js" crossorigin="anonymous"></script>
   <title>DragonBall</title>
   {% block head %}
   {% endblock %}
@@ -17,7 +18,7 @@
   <header>
     <div class="header-logo-container">
       <a href="/">
-        <img src="{% static "images/logo_header.png" %}" alt="dragonball logo">
+        <img src="{% static 'images/logo_header.png' %}" alt="dragon Ball logo">
       </a>
     </div>
     <nav>
@@ -30,7 +31,52 @@
   <main>
     {% block content %}
     {% endblock %}
+    <footer>
+      <div class="footer" id='footer-section'>
+        <div class="footer-container">
+          <div class="left-container">
+            <div>
+              <p>
+                <a href="mailto:tuan.nat915@gmail.com?subject=Hello from your portfolio">
+                  <i class="fa-solid fa-house footer-icons left-icons"></i> <span class="info">Quincy, MA</span>
+                </a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <a href="mailto:tuan.nat915@gmail.com?subject=Hello from your portfolio">
+                  <i class="fa-solid fa-envelopes-bulk footer-icons left-icons"></i> <span class="info">tuan.nat915@gmail.com</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="right-container">
+            <h2>About Me</h2>
+            <p>I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions. Carefulness and responsibility are two skills I learned while working in my previous career, which helped me approach SWE more easily, and work more efficiently. I am interested in technology and techniques in the full-stack development field to keep my passion for it.
+            </p>
+          </div>
+        </div>
+        <div class="social-media">
+          <div>
+            <a href="https://www.linkedin.com/in/tuan-nguyen0915/">
+              <i class="fa-brands fa-linkedin footer-icons"></i>
+            </a>
+          </div>
+          <div>
+            <a href='https://github.com/TuanNguyen0915'>
+              <i class="fa-brands fa-github footer-icons"></i>
+            </a>
+          </div>
+          <div>
+            <a href='https://github.com/TuanNguyen0915'>
+              <i class="fa-brands fa-square-facebook footer-icons"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
+
 </body>
 
 </html>

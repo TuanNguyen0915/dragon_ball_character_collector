@@ -25,6 +25,11 @@ characters = [
         "Dealth Beam",
         "To perform the technique, the user extends his right arm and fires a small, thin, very fast and concentrated laser-like beam of ki from his index finger, which barrels down and pierces through the opponent.",
     ),
+    Character(
+        "Frieza",
+        "Dealth Beam",
+        "To perform the technique, the user extends his right arm and fires a small, thin, very fast and concentrated laser-like beam of ki from his index finger, which barrels down and pierces through the opponent.",
+    ),
 ]
 
 

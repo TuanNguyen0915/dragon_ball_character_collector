@@ -2,12 +2,6 @@
     background: none;
 }
 
-.home_bg {
-    width: 100%;
-    height: 100%;
-}
-
-
 .about-content {
     margin-left: 10rem;
 }
@@ -49,5 +43,5 @@
 }
 
 .about-p {
-    transform: translate(5rem, 1rem);
+    transform: translate(7rem, 1rem);
 }
