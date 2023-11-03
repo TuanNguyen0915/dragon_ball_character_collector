@@ -7,7 +7,7 @@
 
 {% block content %}
 <div class='chars-content'>
-  
+
   <div class="chars-bg">
     <div class="mask">
       <img class="chars-img" src="{% static "images/chars_list_bg.jpg" %}" alt="Goku">
@@ -19,22 +19,22 @@
   <div class="card-container">
     {% for char in chars %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img src="{% static 'images/base.png' %}" alt="dragonball">
+      <a href='/characters/{{char.id}}' class='card-link'>
+        <div class="card-content">
+          <div class="card-img-container">
+            <img src="{% static 'images/base.png' %}" alt="dragonball">
+          </div>
+          <h2 class="card-title">
+            {{ char.name }}
+          </h2>
+          <h3 class="card-title">{{char.skill}}</h3>
+          {% if char.description %}
+          <p>{{char.description}} </p>
+          {% else %}
+          <p>We don't have description for {{char.skill}}</p>
+          {% endif %}
         </div>
-        <h2 class="card-title">
-          {{ char.name }}
-        </h2>
-        <h2 class="card-title">{{char.skill}}</h2>
-        {% if char.description %}
-        <p>{{char.description}} </p>
-        {% else %}
-        <p>We don't have discription for {{char.skill}}</p>
-        {% endif %}
-        {% comment %} <p><small>
-            {{ cat.description }}</small></p> {% endcomment %}
-      </div>
+      </a>
     </div>
     {% endfor %}
   </div>

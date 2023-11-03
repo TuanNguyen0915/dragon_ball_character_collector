@@ -1,0 +1,49 @@
+.chars-bg {
+    opacity: 0.8;
+}
+
+.mask::after {
+    /* width: 50%;
+    box-shadow: 0 0 1rem #000; */
+    opacity: .1;
+}
+
+
+.detail-header {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+.detail-name {
+    margin: 15% 0 0 12%;
+    font-family: 'Bangers', sans-serif;
+    font-size: 8rem;
+    color: rgb(255, 217, 15);
+    filter: drop-shadow(0 0 2.5rem red);
+    /* font-family: 'Bona Nova', sans-serif; */
+    animation: changeColor 5s ease-in-out alternate infinite;
+}
+
+.detail-decs {
+    width: 100%;
+}
+
+.detail-decs h2 {
+    margin: 2rem 0 0 12%;
+    font-size: 4rem;
+    font-family: 'Bangers', sans-serif;
+}
+
+.detail-decs p {
+    margin: 2rem 0 0 12%;
+    padding-right: 4rem;
+    font-size: 2rem;
+    color: rgb(236, 226, 226)
+    text-align: justify;
+    font-family: 'Bona Nova', sans-serif;
+}

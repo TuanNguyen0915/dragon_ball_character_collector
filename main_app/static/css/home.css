@@ -2,9 +2,9 @@
     background: none;
 }
 
-/* .home-bg {
-    margin-top: 5rem;
-} */
+.header-logo-container img {
+    width: 20%;
+}
 
 .home-content {
     margin-left: 10rem;
@@ -50,7 +50,7 @@
     top: 0;
     left: 0;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .home .content {

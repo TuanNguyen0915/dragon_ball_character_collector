@@ -1,126 +1,182 @@
  * {
- 	background: none;
+     background: none;
  }
 
  nav a {
- 	color: black;
+     color: black;
  }
 
  body {
- 	background-color: #333;
+     background-color: #333;
  }
 
  .footer {
- 	display: none;
+     display: none;
  }
 
  .header-logo-container img {
- 	width: 30%;
+     width: 30%;
  }
 
  .chars-img {
- 	width: 100%;
- 	height: 100%;
- 	background-size: cover;
- 	background-position: center;
- 	object-fit: cover;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center;
+     object-fit: cover;
  }
 
  .mask {
- 	width: 100%;
- 	height: 100%;
- 	position: relative;
+     width: 100%;
+     height: 100%;
+     position: relative;
  }
 
 
  .mask::after {
- 	content: "";
- 	width: 100%;
- 	height: 100%;
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	background: #000;
- 	opacity: 0.3;
+     content: "";
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #000;
+     opacity: 0.2;
  }
 
  .page-header {
- 	position: absolute;
- 	top: 5rem;
- 	font-family: 'Bangers', sans-serif;
- 	font-size: 3rem;
- 	color: rgb(255, 217, 15);
- 	filter: drop-shadow(0 0 2rem red);
- 	/* font-family: 'Bona Nova', sans-serif; */
+     position: absolute;
+     top: 12%;
+     left: 8%;
+     font-family: 'Bangers', sans-serif;
+     font-size: 3rem;
+     color: rgb(255, 217, 15);
+     filter: drop-shadow(0 0 2.5rem red);
+     /* font-family: 'Bona Nova', sans-serif; */
+     animation: changeColor 5s ease-in-out alternate infinite;
  }
 
  .card-container {
- 	position: relative;
- 	width: 80%;
- 	display: flex;
- 	justify-content: space-around;
- 	flex-wrap: wrap;
+     position: relative;
+     width: 80%;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
  }
 
  .chars-content {
- 	position: absolute;
- 	width: 100%;
- 	margin-top: 3rem;
- 	display: flex;
- 	flex-direction: column;
- 	align-items: center;
- 	justify-self: center;
+     position: absolute;
+     width: 100%;
+     margin-top: 3rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-self: center;
  }
 
  .card {
- 	width: 275px;
- 	margin: 10px;
- 	border: 1px solid yellow;
- 	border-radius: 10px;
- 	margin: 2rem;
- 	backdrop-filter: blur(5px);
- 	color: #FFDFDF;
- 	transition: .5s;
+     width: 275px;
+     margin: 10px;
+     border: 1px solid yellow;
+     border-radius: 10px;
+     margin: 2rem;
+     backdrop-filter: blur(5px);
+     transition: .5s;
  }
 
  .card:hover {
- 	transform: translate(1rem, -0.5rem);
- 	box-shadow: 0 0 3rem white;
+     transform: translate(1rem, -0.5rem);
+     box-shadow: 0 0 3rem white;
  }
 
+ .card>.card-link {
+     text-decoration: none;
+     color: #FFDFDF;
+ }
 
  .card-content {
- 	padding: 10px;
- 	width: 100%;
+     padding: 10px;
+     width: 100%;
  }
 
- .card-content h2 {
- 	margin: 0.5rem 0;
+ .card-link h2 {
+     text-align: center;
+     font-size: 3rem;
+     font-family: 'Bangers', sans-serif;
+     margin: 0.5rem 0;
+     color: #333;
+     filter: drop-shadow(0 0 .5rem rgb(255, 217, 15));
+     /* filter: drop-shadow(0 0 .5rem yellow); */
  }
 
- .card-content p {
- 	text-align: justify;
- 	padding: 5px;
+ .card-link h3 {
+     font-size: 1.7rem;
+     margin: 0.5rem 0;
+     font-family: 'Bona Nova', sans-serif;
+ }
+
+ .card-link p {
+     font-family: 'Bona Nova', sans-serif;
+     font-size: 1.2rem;
+     text-align: justify;
+     padding: 5px;
  }
 
  .card-img-container {
- 	width: 100%;
- 	padding: 1rem;
- 	margin-bottom: 1rem;
- 	filter: drop-shadow(0 0 1rem rgb(255, 217, 15));
+     width: 100%;
+     padding: 1rem;
+     margin-bottom: 1rem;
  }
 
  .card-img-container img {
- 	width: 100%;
+     width: 100%;
  }
 
  .card-decs {
- 	padding: 2rem;
+     padding: 2rem;
  }
 
 
  @media screen and (max-width: 1024px) {
- 	.card-container {
- 		width: 100%;
- 	}
+     .card-container {
+         width: 100%;
+     }
+ }
+
+
+ @keyframes changeColor {
+     0% {
+         color: rgb(255, 217, 15);
+         filter: drop-shadow(0 0 2.5rem red);
+
+     }
+
+     /* 20% {
+         color: rgb(225, 225, 78);
+         filter: drop-shadow(0 0 2.5rem white);
+
+     }
+
+
+     50% {
+         color: rgb(184, 35, 35);
+         filter: drop-shadow(0 0 2.5rem rgb(255, 217, 15));
+
+     }
+
+     80% {
+        color: rgb(225, 225, 78);
+         filter: drop-shadow(0 0 2.5rem white);
+
+     } */
+
+     50% {
+         color: rgb(169, 25, 25);
+         filter: drop-shadow(0 0 2.5rem white);
+     }
+
+     100% {
+         filter: drop-shadow(0 0 2.5rem red);
+
+     }
  }

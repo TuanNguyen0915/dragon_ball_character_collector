@@ -14,3 +14,8 @@ def about(request):
 def character_index(request):
     chars = Character.objects.all()
     return render(request, "characters/index.html", {"chars": chars})
+
+
+def character_detail(request, char_id):
+    character = Character.objects.get(id=char_id)
+    return render(request, "characters/detail.html", {"char": character})
