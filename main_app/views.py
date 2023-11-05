@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from .models import Character
 
 
@@ -9,6 +9,16 @@ from .models import Character
 class CreateCharacter(CreateView):
     model = Character
     fields = ["name", "skill", "description"]
+    success_url = "/characters"
+
+
+class UpdateCharacter(UpdateView):
+    model = Character
+    fields = ["name", "skill", "description"]
+
+
+class DeleteCharacter(DeleteView):
+    model = Character
     success_url = "/characters"
 
 

@@ -24,6 +24,10 @@
         {% else %}
       <p>We don't have description for {{char.skill}}</p>
       {% endif %}
+      <div class="cat-actions">
+        <a href="{% url 'update-character' char.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'delete-character' char.id %}" class="btn danger">Delete</a>
+      </div>
     </div>
   </div>
 </div>

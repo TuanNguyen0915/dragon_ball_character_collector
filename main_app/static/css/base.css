@@ -175,6 +175,24 @@ nav a:hover {
     padding-left: .5rem;
 }
 
+.btn {
+    align-self: flex-end;
+    background: rgb(255, 217, 15);
+    border-radius: 12px;
+    border: rgb(255, 217, 15);
+    margin: 0 2rem 2rem 0;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 4px;
+    transition: 1s;
+}
+
+.btn:hover {
+    background: green;
+    color: whitesmoke;
+}
+
 @media screen and (max-width: 1024px) {
     .footer-container {
         flex-direction: column;

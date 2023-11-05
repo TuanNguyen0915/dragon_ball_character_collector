@@ -8,5 +8,16 @@ urlpatterns = [
     # CRUD character
     path("characters/<int:char_id>/", views.character_detail, name="character-detail"),
     path(
-        "characters/create/", views.CreateCharacter.as_view(), name="create-character"),
+        "characters/create/", views.CreateCharacter.as_view(), name="create-character"
+    ),
+    path(
+        "characters/<int:pk>/update/",
+        views.UpdateCharacter.as_view(),
+        name="update-character",
+    ),
+    path(
+        "characters/<int:pk>/delete/",
+        views.DeleteCharacter.as_view(),
+        name="delete-character",
+    ),
 ]
