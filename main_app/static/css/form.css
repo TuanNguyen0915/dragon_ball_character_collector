@@ -48,6 +48,12 @@
     color: wheat;
 }
 
+.form-content .helptext{
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
 table {
     margin-top: 2rem;
     padding: 0 2rem;
@@ -84,4 +90,10 @@ td>* {
 .btn.cancel, .btn.danger.active {
     background: #777;
     color: wheat;
+}
+
+.red-text {
+    font-size: 2rem;
+    font-family: 'Bona Nova', sans-serif;
+    color: red;
 }

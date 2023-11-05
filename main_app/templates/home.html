@@ -12,10 +12,28 @@
     </div>
   </div>
   <div class='content'>
-    <img class="balls" src="{% static 'images/7balls.png' %}" alt="Tuan's signature">
-    <h1 class="home-p">
-      Welcome to Dragon Ball collector
-    </h1>
+    <div class="decs7balls">
+      <img class="balls" src="{% static 'images/7balls.png' %}" alt="Tuan's signature">
+      <h1 class="home-p">
+        {% if user.is_authenticated %}
+        Welcome back, enjoy your collection !!!
+        {% else %}
+        Welcome to Dragon Ball collector
+        {% endif %}
+      </h1>
+    </div>
+    {% if not user.is_authenticated  %}
+    <div class="form-home-section">
+      <form action="{% url 'home' %}" method="post" class="form-signin">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name="next" value="{{ next }}">
+        <button type="submit" class="btn sm">Login</button>
+      </form>
+    </div>
+    {% endif %}
+
   </div>
 </div>
 {% endblock  %}

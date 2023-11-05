@@ -23,9 +23,15 @@
     </div>
     <nav>
       <ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url "character-index" %}" style="letter-spacing: 2px">Hi, {{ user.username.capitalize }}</a></li>
         <li><a href="{% url "character-index" %}">All Characters</a></li>
         <li><a href="{% url "create-character" %}">Add new Character</a></li>
-
+        <li><a href="{% url 'logout' %}">Log out</a></li>
+        {% else %}
+        <li><a href="{% url 'home' %}">Login</a></li>
+        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        {% endif %}
         <li><a href="{% url "about" %}">About</a></li>
       </ul>
     </nav>
