@@ -42,17 +42,29 @@ body {
 
 .page-header {
     position: absolute;
-    top: 12%;
+    top: 5%;
     left: 8%;
     font-family: 'Bangers', sans-serif;
-    font-size: 3rem;
+    /* font-size: 3rem;
     color: rgb(255, 217, 15);
     filter: drop-shadow(0 0 2.5rem red);
-    /* font-family: 'Bona Nova', sans-serif; */
+    animation: changeColor 5s ease-in-out alternate infinite; */
+}
+
+.page-header h1>a{
+    font-size: 6rem;
+    color: rgb(255, 217, 15);
+    filter: drop-shadow(0 0 2.5rem red);
+    transition: .5s;
     animation: changeColor 5s ease-in-out alternate infinite;
 }
 
+.page-header h1>a:hover {
+    font-size: 8rem;
+}
+
 .card-container {
+    margin-top: 4rem;
     position: relative;
     width: 80%;
     display: flex;

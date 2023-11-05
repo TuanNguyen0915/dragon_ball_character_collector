@@ -7,16 +7,29 @@
 
 {% block content %}
 <div class='chars-content'>
-
   <div class="chars-bg">
     <div class="mask">
       <img class="chars-img" src="{% static "images/chars_list_bg.jpg" %}" alt="Goku">
     </div>
   </div>
   <div class="page-header">
-    <h1>Characters List</h1>
+    <h1> <a href='#chars-list'>Characters List</a> </h1>
+    <div class="card-container">
+    <div class="card">
+        <a href=' {% url "character-index"%}' class='card-link'>
+          <div class="card-content">
+            <div class="card-img-container">
+              <img src="{% static 'images/base.png' %}" alt="dragonball">
+            </div>
+            <h2 class="card-title"> Char name </h2>
+            <h3>Skill name</h3>
+            <p>Skill description</p>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="card-container">
+  <div class="card-container" id='chars-list'>
     {% for char in chars %}
     <div class="card">
       <a href=' {% url "character-detail" char.id %}' class='card-link'>

@@ -43,7 +43,7 @@
     width: 100%;
     border: 1px solid white;
     border-radius: 16px;
-    box-shadow: .5rem 1rem 3rem .2rem white;
+    /* box-shadow: .5rem 1rem 3rem .2rem white; */
     background: rgba(0, 0, 0, .5);
     color: wheat;
 }
@@ -79,4 +79,9 @@ td>* {
     border: 1px solid rgba(255, 255, 255, 8);
     border-radius: 30px;
     font-family: 'Bona Nova', sans-serif;
+}
+
+.btn.cancel, .btn.danger.active {
+    background: #777;
+    color: wheat;
 }
