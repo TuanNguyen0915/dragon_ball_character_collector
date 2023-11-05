@@ -30,7 +30,7 @@ header {
 }
 
 a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ a {
 .header-logo-container img {
     background: none;
     filter: drop-shadow(0 0 1.5rem rgba(255, 217, 15));
-    width: 30%;
+    width: 25%;
     transition: .3s;
 }
 
@@ -93,6 +93,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Bona Nova', sans-serif;
 }
 
 .footer-container {
@@ -112,7 +113,8 @@ nav a:hover {
 }
 
 .left-container a {
-    font-size: 1.5rem;
+    /* font-family: 'Bangers', sans-serif; */
+    font-size: 2rem;
     color: white;
 }
 
@@ -121,6 +123,7 @@ nav a:hover {
 }
 
 .right-container h2 {
+    font-family: 'Bangers', sans-serif;
     font-size: 2rem;
 }
 

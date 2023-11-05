@@ -1,14 +1,3 @@
-.chars-bg {
-    opacity: 0.8;
-}
-
-.mask::after {
-    /* width: 50%;
-    box-shadow: 0 0 1rem #000; */
-    opacity: .1;
-}
-
-
 .detail-header {
     position: absolute;
     width: 50%;
@@ -16,7 +5,10 @@
     top: 0;
     left: 0;
     color: white;
-    backdrop-filter: blur(8px);
+}
+
+nav a {
+    color: white;
 }
 
 .detail-name {
@@ -25,7 +17,6 @@
     font-size: 8rem;
     color: rgb(255, 217, 15);
     filter: drop-shadow(0 0 2.5rem red);
-    /* font-family: 'Bona Nova', sans-serif; */
     animation: changeColor 5s ease-in-out alternate infinite;
 }
 
@@ -43,7 +34,6 @@
     margin: 2rem 0 0 12%;
     padding-right: 4rem;
     font-size: 2rem;
-    color: rgb(236, 226, 226)
     text-align: justify;
     font-family: 'Bona Nova', sans-serif;
 }

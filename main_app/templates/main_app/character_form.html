@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}" />
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="create-bg">
+      <div class="mask">
+        <img class="create-img" src="{% static 'images/home-bg.jpg' %}" alt="">
+      </div>
+    </div>
+  <div class="form-content">
+    <form action="" method="post" class="form-container">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit" class="btn submit">Submit!</button>
+    </form>
+  </div>
+</section>
+
+
+{% endblock %}

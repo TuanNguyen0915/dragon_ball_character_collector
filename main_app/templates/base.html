@@ -23,8 +23,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/characters">All Characters</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="{% url "character-index" %}">All Characters</a></li>
+        <li><a href="{% url "create-character" %}">Add new Character</a></li>
+
+        <li><a href="{% url "about" %}">About</a></li>
       </ul>
     </nav>
   </header>

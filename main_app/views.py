@@ -1,8 +1,17 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Character
 
 
 # Create your views here.
+
+
+class CreateCharacter(CreateView):
+    model = Character
+    fields = ["name", "skill", "description"]
+    success_url = "/characters"
+
+
 def home(request):
     return render(request, "home.html")
 

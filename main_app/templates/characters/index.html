@@ -19,7 +19,7 @@
   <div class="card-container">
     {% for char in chars %}
     <div class="card">
-      <a href='/characters/{{char.id}}' class='card-link'>
+      <a href=' {% url "character-detail" char.id %}' class='card-link'>
         <div class="card-content">
           <div class="card-img-container">
             <img src="{% static 'images/base.png' %}" alt="dragonball">

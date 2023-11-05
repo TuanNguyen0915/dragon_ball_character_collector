@@ -14,9 +14,6 @@
      display: none;
  }
 
- .header-logo-container img {
-     width: 30%;
- }
 
  .chars-img {
      width: 100%;
@@ -103,10 +100,9 @@
      text-align: center;
      font-size: 3rem;
      font-family: 'Bangers', sans-serif;
-     margin: 0.5rem 0;
+     margin: 0.5rem 0 2rem 0;
      color: #333;
-     filter: drop-shadow(0 0 .5rem rgb(255, 217, 15));
-     /* filter: drop-shadow(0 0 .5rem yellow); */
+     filter: drop-shadow(0 0 1rem yellow);
  }
 
  .card-link h3 {
@@ -151,32 +147,8 @@
 
      }
 
-     /* 20% {
-         color: rgb(225, 225, 78);
-         filter: drop-shadow(0 0 2.5rem white);
-
-     }
-
-
-     50% {
-         color: rgb(184, 35, 35);
-         filter: drop-shadow(0 0 2.5rem rgb(255, 217, 15));
-
-     }
-
-     80% {
-        color: rgb(225, 225, 78);
-         filter: drop-shadow(0 0 2.5rem white);
-
-     } */
-
-     50% {
-         color: rgb(169, 25, 25);
-         filter: drop-shadow(0 0 2.5rem white);
-     }
-
      100% {
-         filter: drop-shadow(0 0 2.5rem red);
-
+         filter: drop-shadow(0 0 2.5rem blue);
+         color: yellow;
      }
  }
