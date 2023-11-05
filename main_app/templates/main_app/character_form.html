@@ -9,10 +9,19 @@
 <section>
     <div class="create-bg">
       <div class="mask">
-        <img class="create-img" src="{% static 'images/home-bg.jpg' %}" alt="">
+        {% if object %}
+        <img class="create-img" src="{% static 'images/create.jpg' %}" alt="">
+        {% else %}
+        <img class="create-img" src="{% static 'images/edit.jpg' %}" alt="">
+        {% endif %}
       </div>
     </div>
   <div class="form-content">
+    {% if object %}
+    <h1>Edit {{object.name}}</h1>
+  {% else %}
+    <h1>Add a Character</h1>
+  {% endif %}
     <form action="" method="post" class="form-container">
       {% csrf_token %}
       <table>

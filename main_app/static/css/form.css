@@ -17,6 +17,24 @@
     left: 10%;
 }
 
+.form-content h1 {
+    font-size: 4rem;
+    color: rgb(255, 217, 15);
+    /* filter: drop-shadow(0 0 2.5rem white); */
+    font-family: 'Bangers', sans-serif;
+    margin-bottom: 2rem;
+    animation: changeColor 3s ease-in-out alternate infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        filter: drop-shadow(0 0 2.5rem white);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 2.5rem yellow);
+    }
+}
 
 .form-container {
     display: flex;

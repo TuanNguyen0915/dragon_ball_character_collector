@@ -42,10 +42,17 @@ nav a {
     font-family: 'Bona Nova', sans-serif;
 }
 
-.btn.danger {
-    background-color: rgba(255, 0, 0, .5);
+.char-actions {
+    display: flex;
+    justify-content: right;
 }
 
-.btn.danger {
-    background-color: red;
+.char-actions a {
+    margin-top: 2rem;
+    margin-right: 4rem;
+    color: black;
+}
+
+.char-actions a:hover {
+    background: #777;
 }

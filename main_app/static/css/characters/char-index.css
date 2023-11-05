@@ -113,6 +113,7 @@ body {
     font-size: 1.7rem;
     margin: 0.5rem 0;
     font-family: 'Bona Nova', sans-serif;
+    text-transform: capitalize;
 }
 
 .card-link p {
@@ -140,19 +141,5 @@ body {
 @media screen and (max-width: 1024px) {
     .card-container {
         width: 100%;
-    }
-}
-
-
-@keyframes changeColor {
-    0% {
-        color: rgb(255, 217, 15);
-        filter: drop-shadow(0 0 2.5rem red);
-
-    }
-
-    100% {
-        filter: drop-shadow(0 0 2.5rem blue);
-        color: yellow;
     }
 }

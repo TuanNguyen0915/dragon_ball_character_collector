@@ -27,9 +27,9 @@
           <h2 class="card-title">
             {{ char.name }}
           </h2>
-          <h3 class="card-title">{{char.skill}}</h3>
+          <h3>{{char.skill}}</h3>
           {% if char.description %}
-          <p>{{char.description}} </p>
+          <p>{{char.description|slice:20}} &nbsp;...&nbsp; <span style="color: wheat;">read more</span> </p>
           {% else %}
           <p>We don't have description for {{char.skill}}</p>
           {% endif %}
