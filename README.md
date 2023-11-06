@@ -11,7 +11,7 @@
 
 <p>&nbsp;</p>
 
-# **Getting Started  https://tuanng-gameposts.fly.dev/**
+# **Getting Started  https://dbzcollector.fly.dev/**
 
 ### **Trello board: [trello.com/tuannguyen0915](https://trello.com/b/b2y9TR4r/gamenews)**
 
