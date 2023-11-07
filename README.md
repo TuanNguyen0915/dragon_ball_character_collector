@@ -73,15 +73,19 @@ sudo docker compose down
 
 # Attributions
 
+- ### Google font:
+    -   [Bangers](https://fonts.google.com/?query=bangers)
+    -   [Bona Nova](https://fonts.google.com/?query=Bona+Nova)
+
 - ### Icon for about section:
-  - [fontawesome.com](https://fontawesome.com/)
+    -   [fontawesome.com](https://fontawesome.com/)
 
 - ### Image:
-  - [wallpaperflare.com](https://www.wallpaperflare.com/search?wallpaper=Dragon+Ball+Super)
-  - [wall.alphacoders.com](https://wall.alphacoders.com/by_sub_category.php?id=179743&name=Dragon+Ball+Z+Wallpapers)
+    -   [wallpaperflare.com](https://www.wallpaperflare.com/search?wallpaper=Dragon+Ball+Super)
+    -   [wall.alphacoders.com](https://wall.alphacoders.com/by_sub_category.php?id=179743&name=Dragon+Ball+Z+Wallpapers)
 
-- ### Information about character:
-    - [dragonball.fandom.com](https://dragonball.fandom.com/wiki/Main_Page)
+- ### Information about characters:
+    -   [dragonball.fandom.com](https://dragonball.fandom.com/wiki/Main_Page)
 
 <p>&nbsp;</p>
 
