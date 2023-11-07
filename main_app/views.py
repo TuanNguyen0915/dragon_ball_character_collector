@@ -49,7 +49,10 @@ def character_index(request):
 @login_required
 def character_detail(request, char_id):
     character = Character.objects.get(id=char_id)
-    return render(request, "characters/detail.html", {"char": character})
+    char_img = f"../../static/images/characters/{character.name.lower()}.jpg"
+    return render(
+        request, "characters/detail.html", {"char": character, "char_img": char_img}
+    )
 
 
 def signup(request):

@@ -11,7 +11,11 @@
 <div class='chars-content'>
   <div>
     <div class="mask">
-      <img class="chars-img" src="{% static "images/chars_detail.jpg" %}" alt="Goku">
+      <img 
+      class="chars-img" 
+      src="{{char_img}}" 
+      onerror="this.onerror=null;this.src='{% static "images/chars_detail.jpg" %}';"
+      alt="{{char.name}}">
     </div>
   </div>
   <div class="detail-header">
