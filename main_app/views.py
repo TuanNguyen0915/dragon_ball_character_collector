@@ -3,6 +3,7 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -56,7 +57,8 @@ def character_detail(request, char_id):
 
 
 def signup(request):
-    error_message = ""
+    usernames = [user.username for user in User.objects.all()]
+    error_message, error_message_user = "", ""
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -64,7 +66,18 @@ def signup(request):
             login(request, user)
             return redirect("character-index")
         else:
-            error_message = "Invalid sign up - try again"
+            if form.data["username"] in usernames:
+                error_message_user = (
+                    f" {form.data['username']} has exists, please try to "
+                )
+            if len(form.data["password1"]) < 8:
+                error_message = "Your password must contain at least 8 characters."
+            elif form.data["password1"] != form.data["password2"]:
+                error_message = "The password does not match, please try again."
     form = UserCreationForm()
-    context = {"form": form, "error_message": error_message}
+    context = {
+        "form": form,
+        "error_message": error_message,
+        "error_message_user": error_message_user,
+    }
     return render(request, "signup.html", context)

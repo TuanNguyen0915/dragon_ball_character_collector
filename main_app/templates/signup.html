@@ -8,16 +8,22 @@
 {% block content %}
 <div class="create-bg">
   <div class="mask">
-    <img class="create-img" src="{% static 'images/edit.jpg' %}" alt="">
+    <img class="create-img" src="{% static 'images/edit.jpg' %}" alt="" style="margin-top: 2rem;">
   </div>
 </div>
 <div class="page-header">
   <div class="form-content">
     <h1>Sign Up</h1>
+    {% if error_message_user %}
+    <p class="red-text">
+      {{ error_message_user }} <a href="/" style="color: yellow; font-size:2rem">login here !!!</a>
+    </p>
+    {% else %}
     {% if error_message %}
     <p class="red-text">
       {{ error_message }}
     </p>
+    {% endif %}
     {% endif %}
     <form action="" method="post" class="form-container" autocomplete="off">
       {% csrf_token %}
