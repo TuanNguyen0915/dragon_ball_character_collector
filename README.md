@@ -13,8 +13,6 @@
 
 # **Getting Started  [dbzcollector.fly.dev](https://dbzcollector.fly.dev/about)**
 
-### **Trello board: [trello.com/tuannguyen0915](https://trello.com/b/b2y9TR4r/gamenews)**
-
 
 <p>&nbsp;</p>
 
