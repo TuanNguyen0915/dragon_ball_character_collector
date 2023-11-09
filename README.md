@@ -6,7 +6,7 @@
 
 # Description
 
-#### This is a platform where DBZ's fans can share their opinion about their favorite characters and their best skills. Users have the ability to create characters and manage their content using the Create Read Update Delete (CRUD) operations.
+#### This is a platform where DBZ's fans can share their opinion about their favorite characters and characters best skills. Users have the ability to create characters and manage their content using the Create Read Update Delete (CRUD) operations.
 
 
 <p>&nbsp;</p>
